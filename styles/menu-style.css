@@ -1,0 +1,217 @@
+/*
+	Student Name: Chukwuemeka Ejiogu 
+	File Name: menu-style.css
+	Current Date: 07/24/2023
+*/
+
+/* Imports the Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* Gives the whole page a dark background */
+body {
+    background-color: #000009;
+    color: #B3D9DE; /* Sets the default font color for the whole page to light-bluish */
+    font-family: 'Montserrat', sans-serif; /* Set the default font-family */
+}
+
+/* Create a grid layout for menu items */
+.menu-items {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Distribute items evenly between columns */
+}
+
+/* Sets the width of each column to approximately half the container */
+.contentleft,
+.contentright {
+    width: 48%; /* Adjust the width of each column */
+}
+
+/* Adds spacing between each menu item */
+.contentleft li,
+.contentright li {
+    margin-bottom: 20px;
+}
+
+/* Adds a media query for better responsiveness on smaller screens */
+@media screen and (max-width: 768px) {
+    .menu-items {
+        flex-direction: column; /* On smaller screens, display the items in a single column */
+    }
+
+    /* Reset the width of each column to take up the full container width */
+    .contentleft,
+    .contentright {
+        width: 100%;
+    }
+
+    /* Remove the margin between menu items on smaller screens */
+    .contentleft li,
+    .contentright li {
+        margin-bottom: 0;
+    }
+}
+
+/* Style the navigation bar at the top */
+.nav {
+    padding-bottom: 0.25em;
+    border-radius: 2px;
+    background-color: #B3DEC1;
+}
+
+/* Remove default list styles and style navigation links */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000009;
+}
+
+li {
+    float: left;
+}
+
+/* Style the individual menu items */
+.menu-item {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin-bottom: 10px; /* Add spacing between menu items */
+}
+
+.menu-item:hover {
+    background-color: #003825;
+    text-decoration: none;
+}
+
+/* Style links throughout the page */
+a:link,
+a:visited,
+a:active {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.banner {
+    background-size: initial;
+    padding-top: 10em;
+    background-image: url(../images/BannerImage2.png);
+    z-index: 1;
+    padding-bottom: 8em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+/* Style the heading and subheading in the banner */
+.banner h1 {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    z-index: 2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.banner h5 {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    margin-top: 4em;
+    padding-bottom: 3em;
+}
+
+.banner .heroButton {
+    text-align: center;
+    background-color: #519872;
+    color: green;
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 3.5em;
+}
+
+.banner .heroButtonContainer {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    grid-gap: 1em;
+}
+
+/* Add animations for menu items */
+.contentright {
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(25%);
+}
+
+.contentleft {
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(-25%);
+}
+
+.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.middle {
+    margin-top: 4em;
+}
+
+.middle h2 {
+    color: #8bde54;
+    text-align: center;
+}
+
+.middle p {
+    color: #8bde54;
+    text-align: center;
+    margin-bottom: 1.5em;
+    padding-bottom: 2.5em; 
+}
+
+/* Style the footer at the bottom of the page */
+footer {
+    bottom: 0%;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+    background-color: black; /* Makes the background color of the footer black */
+    display: grid;
+    place-items: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 0.5em;
+}
+
+/* Style the category headings */
+.menu-category h2 {
+    color: #5ed164;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing between category headings */
+}
+
+/* Add margin to the main content to create space for the footer */
+main {
+    margin-bottom: 50px;
+}
