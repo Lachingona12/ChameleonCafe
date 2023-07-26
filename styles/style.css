@@ -56,6 +56,16 @@ a:hover {
     background-color: initial;
 }
 
+.bottomhome li a {
+    float: none;
+    display: inline-block;
+    padding: 0px;
+    text-align: none;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
 .navCustom h1 {
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
@@ -165,12 +175,32 @@ a:hover {
 }
 
 .bottomhome h2 {
+    margin-top: 5em;
     color: #E5FCF5;
     font-family: 'Montserrat', sans-serif;
 }
 
 .bottomhome li {
     clear: left;
+    font-size: 20px;
+}
+
+.video .contentleft {
+    float: left;
+    position: absolute;
+    margin-top: 20em;
+}
+
+.video a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.video .contentright {
+    float: right;
+    margin-top: 20em;
+    margin-right: 38%;
 }
 
 footer {
@@ -274,4 +304,21 @@ hr {
 .btn-primary:hover {
     background-color: #0056b3;
     border-color: #0056b3;
+}
+
+/* Mobile adjustments */
+
+/* Tablets and smaller screens */
+@media only screen and (max-device-width: 1380px) {
+    .video .contentright {
+        margin-right: 15%;
+    }
+
+
+/* Phones */
+@media only screen and (max-device-width: 950px) {
+    .video .contentright {
+        margin-right: 7%;
+    }
+    }
 }
