@@ -1,20 +1,29 @@
 /*
-	Student Name: Chukwuemeka Ejiogu 
+	Student Name: Chukwuemeka Ejiogu
 	File Name: menu-style.css
-	Current Date: 07/24/2023
+	Current Date: 07/26/2023
 */
 
 /* Imports the Montserrat font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+/* Imports "Hello Beautiful" font */
+@font-face {
+  font-family: 'HelloBeautiful'; /* The name of custom font */
+  src: url('HelloBeautiful.woff') format('woff'); /* Utiizes my WOFF font file */
+  /* Add more src declarations for additional font formats (e.g., TTF) for better cross-browser support */
+}
+
+/* Imports the Lobster font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 /* Gives the whole page a dark background */
 body {
     background-color: #000009;
     color: #B3D9DE; /* Sets the default font color for the whole page to light-bluish */
-    font-family: 'Montserrat', sans-serif; /* Set the default font-family */
+    font-family: 'Montserrat', sans-serif; 
 }
 
-/* Create a grid layout for menu items */
 .menu-items {
     display: flex; /* Use flexbox layout */
     justify-content: space-between; /* Distribute items evenly between columns */
@@ -38,27 +47,23 @@ body {
         flex-direction: column; /* On smaller screens, display the items in a single column */
     }
 
-    /* Reset the width of each column to take up the full container width */
     .contentleft,
     .contentright {
         width: 100%;
     }
 
-    /* Remove the margin between menu items on smaller screens */
     .contentleft li,
     .contentright li {
         margin-bottom: 0;
     }
 }
 
-/* Style the navigation bar at the top */
 .nav {
     padding-bottom: 0.25em;
     border-radius: 2px;
     background-color: #B3DEC1;
 }
 
-/* Remove default list styles and style navigation links */
 ul {
     list-style-type: none;
     margin: 0;
@@ -79,6 +84,11 @@ li {
     font-size: 1.2em;
     text-decoration: none;
     margin-bottom: 10px; /* Add spacing between menu items */
+}
+
+.menu-item h3 {
+    font-family: 'Lobster', cursive;
+    font-size: 1.4em;
 }
 
 .menu-item:hover {
@@ -152,6 +162,11 @@ a:hover {
     grid-gap: 1em;
 }
 
+.banner-text {
+        text-align: center;
+        margin: 10px 0;
+    }
+
 /* Add animations for menu items */
 .contentright {
     opacity: 0;
@@ -205,13 +220,24 @@ footer {
 
 /* Style the category headings */
 .menu-category h2 {
-    color: #5ed164;
-    font-size: 2em;
+    color: #5ed164; /* some shade of green */
+	font-family: 'HelloBeautiful', sans-serif;
+    font-size: 7em;
     text-align: center;
-    margin-bottom: 20px; /* Add spacing between category headings */
+    margin-bottom: 20px; /* Adds spacing between category headings */
 }
 
 /* Add margin to the main content to create space for the footer */
 main {
     margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: 'BioRhyme', serif;
+}
+
+h1.banner-text {
+  font-size: 40px;
+  font-family: 'Lobster', cursive;
 }

@@ -1,13 +1,12 @@
 <!--
 	Student Name: Chukwuemeka Ejiogu 
 	File Name: menu.html
-	Current Date: 07/24/2023
+	Current Date: 07/26/2023
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Update the page title to reflect the Menu page -->
     <title>Chameleon Cafe - Menu</title>
 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -16,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&display=swap" rel="stylesheet">
+
 
 
     <script defer src="scripts/app.js"></script>
@@ -25,12 +27,55 @@
             opacity: 1;
             transform: translateX(0);
         }
+		
+		.banner-text {
+        text-align: center;
+        margin: 10px 0;
+        font-family: 'Lobster', cursive;
+        font-size: 40px;
+        color: #336699; /* Change the font color to a shade of blue (#336699) */
+    }
+	
+	body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            background-color: #0d0c0c;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #336699;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
     </style>
 </head>
 <body>
     <header>
         <div class="nav">
             <img src="images/ChameleonCafe-Colored_Final.png" height="125" width="125" alt="Chameleon Cafe Logo">
+			<h1 class="banner-text">Chameleon Cafe, Where Every Bite Adapts to Your Appetite!</h1>
             <nav>
                 <ul> 
                     <li><a href="index.html">Home</a></li>
@@ -42,277 +87,454 @@
     </header>
 
     <main>
-        <!-- Beverages category -->
-    <section class="menu-category">
-        <h2>Beverages</h2>
-        <div class="menu-items">
-            <ul class="contentleft">
-                <li>
-                    <h3>Sparkling Water</h3>
-                    <img src="images/sparkling_water.jpg" alt="Sparkling Water" height="300" width="200">
-                    <p>Cool, refreshing carbonated water that offers pure hydration. Perfect for quenching even the heftiest of thirsts.</p>
-                    <p>Price: $0.99</p>
-                </li>
-                <li>
-                    <h3>Tea</h3>
-                    <img src="images/tea.jpg" alt="Tea" height="300" width="300">
-                    <p>Try our soul-soothing signature herbal tea or any other top-notch tea of your choice! They've been carefully selected and can be served hot or iced.</p>
-                    <p>Price: $1.99</p>
-                </li>
-				<li>
-                    <h3>Soda</h3>
-                    <img src="images/soda.jpg" alt="Soda" height="300" width="300">
-                    <p>A bubbly beverage that never ceases to tingle your taste buds! Choose from our selection of fizz-filled sodas.</p>
-                    <p>Price: $1.50</p>
-                </li>
-            </ul>
-
-            <ul class="contentright">
-                <li>
-                    <h3>Lemonade</h3>
-                    <img src="images/lemonade.jpg" alt="Lemonade" height="300" width="300">
-                    <p>Freshly squeezed savory lemons made into a classic refreshing drink. The pure essence of summer is within this glass!</p>
-                    <p>Price: $1.99</p>
-                </li>
-                <li>
-                    <h3>Coffee</h3>
-                    <img src="images/coffee.jpg" alt="Coffee" height="300" width="300">
-                    <p>Perfectly brewed to awaken your senses, enjoy the coffee of your choice. Can be served hot or iced.</p>
-                    <p>Price: $1.75</p>
-                </li>
-				<li>
-                    <h3>Milkshake</h3>
-                    <img src="images/milkshake.jpg" alt="Milkshake" height="300" width="300">
-                    <p>Indulge in creamy goodness with our delectable milkshakes, topped with a puffy cloud of whipped cream! It can be available in various flavors such as chocolate, vanilla, and strawberry.</p>
-                    <p>Price: $3.50</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-		
-        <!-- Breakfast category -->
-		<section class="menu-category">
-        <h2>Breakfast</h2>
-        <div class="menu-items">
-            <ul class="contentleft">
-                <li>
-                    <h3>Pancakes</h3>
-                    <img src="images/pancakes.jpg" alt="Pancakes" height="300" width="300">
-                    <p>Fluffy stacks of golden pancakes. Topped with seasonal fruits, sweet soothing syrup and a sprinkle of joy!.</p>
-                    <p>Price: $7.99</p>
-                </li>
-                <li>
-                    <h3>Waffles</h3>
-                    <img src="images/waffles.jpg" alt="Waffles" height="300" width="300">
-                    <p>Crispy on the outside while tender on the inside! A perfect combination of textures for nostalgic indulgence.</p>
-                    <p>Price: $6.99</p>
-                </li>
-                <li>
-                    <h3>Omelette</h3>
-                    <img src="images/omelette.jpg" alt="Omelette" height="300" width="300">
-                    <p>Making your mother-of-all omelettes without fretting over a single egg! The combination of fresh ingredients will surely leave you energized!</p>
-                    <p>Price: $7.99</p>
-                </li>
-            </ul>
-
-            <ul class="contentright">
-                <li>
-                    <h3>Breakfast Burrito</h3>
-                    <img src="images/breakfast_burrito.jpg" alt="Breakfast Burrito" height="300" width="300">
-                    <p>Wrapped in a soft tortilla, our hearty breakfast burrito combines scrambled eggs, cheese, and savory fillings for a satisfying morning meal.</p>
-                    <p>Price: $7.50</p>
-                </li>
-                <li>
-                    <h3>French Toast</h3>
-                    <img src="images/french_toast.jpg" alt="French Toast" height="300" width="300">
-                    <p>Slices of bread dipped in a sweet custard, grilled to perfection, and served with a dusting of powdered sugar and syrup.</p>
-                    <p>Price: $5.99</p>
-                </li>
-                <li>
-                    <h3>Cinnamon Roll</h3>
-                    <img src="images/cinnamon_roll.jpg" alt="Cinnamon Roll" height="300" width="300">
-                    <p>Savor the warm and gooey cinnamon goodness of our freshly baked rolls, topped with creamy icing. Our rolls are generously drizzled with a velvety glaze that's sure to leave you in a daze!</p>
-                    <p>Price: $4.99</p>
-                </li>
-            </ul>
-        </section>
         
-        <!-- Lunch category -->
-		<section class="menu-category">
-        <h2>Lunch</h2>
-        <div class="menu-items">
-            <ul class="contentleft">
-                <li>
-                    <h3>BLT Sandwich</h3>
-                    <img src="images/blt.jpg" alt="BLT Sandwich" height="300" width="300">
-                    <p>A classic combination of crispy bacon, fresh lettuce, and juicy tomatoes, layered on toasted bread with bbq sauce. This sandwich is a scrumptious reminder of simple pleasures</p>
-                    <p>Price: $9.99</p>
-                </li>
-                <li>
-                    <h3>Caesar Salad</h3>
-                    <img src="images/salad.jpg" alt="Caesar Salad" height="300" width="300">
-                    <p>A delightful companion to any meal. Crisp romaine lettuce tossed in creamy Caesar dressing, topped with croutons and parmesan cheese.</p>
-                    <p>Price: $6.99</p>
-                </li>
-                <li>
-                    <h3>Grilled Cheese Sandwich</h3>
-                    <img src="images/grilled_cheese.jpg" alt="Grilled Cheese Sandwich" height="300" width="300">
-                    <p>A simple dish that's perfect for any occasion. Melted cheese sandwiched between buttery toasted bread, providing comfort and nostalgia in every bite. Try it along with a side order of tomato soup!</p>
-                    <p>Price: $5.99</p>
-                </li>
-            </ul>
+		<!-- Coffee category -->
+<section class="menu-category">
+    <h2>Coffee</h2>
+    <div class="menu-items">
+        <ul class="contentleft">
+            <li>
+                <h3>Regular Coffee</h3>
+                <img src="images/coffee.jpg" alt="Coffee" height="300" width="300">
+                <p>Choose from a variety of coffee delights that can be served hot or iced.</p>
+                <p>Price: $2.99</p>
+            </li>
+            <li>
+                <h3>Americano</h3>
+                <img src="images/americano.jpg" alt="Americano" height="300" width="300">
+                <p>Enjoy a bold and smooth espresso with hot water, creating an aromatic Americano.</p>
+                <p>Price: $3.49</p>
+            </li>
+            <li>
+                <h3>Mocha</h3>
+                <img src="images/mocha.jpg" alt="Mocha" height="300" width="300">
+                <p>Savor the perfect blend of espresso and rich chocolate with our marvelous Mocha.</p>
+                <p>Price: $3.99</p>
+            </li>
+        </ul>
 
-            <ul class="contentright">
-                <li>
-                    <h3>Cheeseburger</h3>
-                    <img src="images/cheeseburger.jpg" alt="Cheeseburger" height="300" width="300">
-                    <p>A classic American favorite that never disappoints! Our juicy beef patty, grilled to perfection, is topped with the perfect blend of melted cheese, crisp lettuce, ripe tomatoes, and piquant pickles, all nestled between soft, toasted buns.</p>
-                    <p>Price: $7.99</p>
-                </li>
-                <li>
-                    <h3>Tacos</h3>
-                    <img src="images/tacos.jpg" alt="Tacos" height="300" width="300">
-                    <p>A Mexican classic filled with your preferred protein and fresh toppings for a delightful fiesta for your taste buds! Choose from an assortment of soft or crunchy taco shells.</p>
-                    <p>Price: $6.99</p>
-                </li>
-				<li>
-                    <h3>BBQ Ribs</h3>
-                    <img src="images/ribs.jpg" alt="BBQ Ribs" height="300" width="300">
-                    <p>From the mouthwatering aroma to the tender & juicy ribs slathered in our lip-smacking BBQ sauce, these ribs are a finger-licking delight that's sure to leave you craving for more!</p>
-                    <p>Price: $9.50</p>
-                </li>
-            </ul>
-        </section>
+        <ul class="contentright">
+            <li>
+                <h3>Espresso</h3>
+                <img src="images/espresso.jpg" alt="Espresso" height="300" width="300">
+                <p>Experience the intense and bold flavor of our perfectly brewed Espresso.</p>
+                <p>Price: $2.49</p>
+            </li>
+            <li>
+                <h3>Cappuccino</h3>
+                <img src="images/cappuccino.jpg" alt="Cappuccino" height="300" width="300">
+                <p>Indulge in a classic cappuccino, a delightful combination of espresso, steamed milk, and a frothy foam topping.</p>
+                <p>Price: $3.79</p>
+            </li>
+            <li>
+                <h3>Iced Coffee</h3>
+                <img src="images/iced_coffee.jpg" alt="Iced Coffee" height="300" width="300">
+                <p>Revitalize and cool down with our refreshing iced coffee options.</p>
+                <p>Price: $3.29</p>
+            </li>
+        </ul>
+    </div>
+</section>
 		
-        <!-- Dinner category -->
-		<section class="menu-category">
-        <h2>Dinner</h2>
-        <div class="menu-items">
-            <ul class="contentleft">
-                <li>
-                    <h3>Grilled Salmon</h3>
-                    <img src="images/salmon.jpg" alt="Grilled Salmon" height="300" width="300">
-                    <p>Indulge in a taste of the ocean with pur fresh salmon fillet grilled and served over a bed of rice.  Each forkful is a delightful encounter with a buttery soft dish that's as nutritious as it is delicious.</p>
-                    <p>Price: $11.99</p>
-                </li>
-                <li>
-                    <h3>Teriyaki Chicken</h3>
-                    <img src="images/teriyaki.jpg" alt="Teriyaki Chicken" height="300" width="300">
-                    <p>Embark on a journey to the East with our tender pieces of chicken glazed with a mouthwatering teriyaki sauce, accompanied by steamed rice and a medley of stir-fried vegetables! The perfect balance of sweet and tangy goodness!</p>
-                    <p>Price: $10.99</p>
-                </li>
-                <li>
-                    <h3>Spaghetti Bolognese</h3>
-                    <img src="images/spaghetti.jpg" alt="Spaghetti Bolognese" height="300" width="300">
-                    <p>A classic Italian favorite, our hearty spaghetti is adorned with a rich and savory Bolognese sauce, made from a delightful blend of ground meat, tomatoes, and herbs! Topped with grated parmesan, this dish is sure to please pasta passionates.</p>
-                    <p>Price: $9.99</p>
-                </li>
-            </ul>
+		<!-- Beverages category -->
+<section class="menu-category">
+    <h2>Beverages</h2>
+    <div class="menu-items">
+        <ul class="contentleft">
+            <li>
+                <h3>Sparkling Water</h3>
+                <img src="images/water.jpg" alt="Sparkling Water" height="300" width="300">
+                <p>Cool, refreshing carbonated water that offers pure hydration. Perfect for quenching even the heftiest of thirsts.</p>
+                <p>Price: $2.50</p>
+            </li>
+            <li>
+                <h3>Lemonade</h3>
+                <img src="images/lemonade.jpg" alt="Lemonade" height="300" width="300">
+                <p>Freshly squeezed savory lemons made into the pure essence of summer all within a glass.</p>
+                <p>Price: $3.00</p>
+            </li>
+            <li>
+                <h3>Hot Chocolate</h3>
+                <img src="images/hot_chocolate.jpg" alt="Hot Chocolate" height="300" width="300">
+                <p>Delight in the rich and creamy goodness of hot chocolate.</p>
+                <p>Price: $4.50</p>
+            </li>
+        </ul>
 
-            <ul class="contentright">
-                <li>
-                    <h3>Shrimp Pasta</h3>
-                    <img src="images/shrimp_pasta.jpg" alt="Shrimp Pasta" height="300" width="300">
-                    <p>Savor the taste of luxury with our Shrimp Pasta, featuring succulent shrimp delicately tossed in a a medley of herbs and spices.</p>
-                    <p>Price: $10.99</p>
-                </li>
-                <li>
-                    <h3>Garlic Soup</h3>
-                    <img src="images/garlic.jpg" alt="Garlic Soup" height="300" width="300">
-                    <p>Discover the culinary magic of garlic. This creamy soup has been delicately blended with savory broth, croutons and a hint of aromatic herbs.</p>
-                    <p>Price: $8.99</p>
-                </li>
-                <li>
-                    <h3>Shrimp Fried Rice</h3>
-                    <img src="images/shrimp_fried_rice.jpg" alt="Shrimp Fried Rice" height="300" width="300">
-                    <p>Combining skillfully seasoned rice and succulent shrimp can never go wrong in providing a sensational symphony of flavors and textures. You can't help but take another spoonful.</p>
-                    <p>Price: $7.50</p>
-                </li>
-            </ul>
-        </section>
+        <ul class="contentright">
+            <li>
+                <h3>Tea</h3>
+                <img src="images/tea.jpg" alt="Tea" height="300" width="300">
+                <p>Experience the serene delight of our premium tea selection. Try our signature Herbal Tea, where each sip brings a moment of tranquility!</p>
+                <p>Price: $2.00</p>
+            </li>
+            <li>
+                <h3>Smoothie</h3>
+                <img src="images/smoothie.jpg" alt="Smoothie" height="300" width="300">
+                <p>Experience the burst of flavors with our variety of fruit smoothies.</p>
+                <p>Price: $5.00</p>
+            </li>
+            <li>
+                <h3>Soda</h3>
+                <img src="images/soda.jpg" alt="Soda" height="300" width="300">
+                <p>A variety of carbonated beverages in different flavors to quench your thirst.</p>
+                <p>Price: $1.50</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
 		
+        <!-- Sandwiches & Wraps category -->
+<section class="menu-category">
+    <h2>Sandwiches n' Wraps</h2>
+    <div class="menu-items">
+        <ul class="contentleft">
+            <li>
+                <h3>BLT Sandwich</h3>
+                <img src="images/blt.jpg" alt="BLT Sandwich" height="300" width="300">
+                <p>A classic combination of crispy bacon, fresh lettuce, and juicy tomatoes, layered on toasted bread with bbq sauce.</p>
+                <p>Price: $8.99</p>
+            </li>
+            <li>
+                <h3>Grilled Cheese Sandwich</h3>
+                <img src="images/grilled_cheese.jpg" alt="Grilled Cheese Sandwich" height="300" width="300">
+                <p>A nostalgic sandwich with melted cheese between slices of toasted bread, perfect for a comforting meal.</p>
+                <p>Price: $6.99</p>
+            </li>
+            <li>
+                <h3>Panini</h3>
+                <img src="images/panini.jpg" alt="Panini" height="300" width="300">
+                <p>A mouthwatering panini with chicken and pesto, grilled to perfection.</p>
+                <p>Price: $9.99</p>
+            </li>
+			<li>
+				<h3>Cheeseburger</h3>
+				<img src="images/cheeseburger.jpg" alt="Cheeseburger" height="300" width="300">
+				<p>A classic American favorite that never disappoints!</p>
+				<p>Price: $7.99</p>
+			</li>
+        </ul>
+
+        <ul class="contentright">
+            <li>
+                <h3>Croissant Sandwich</h3>
+                <img src="images/csand.jpg" alt="Croissant Sandwich" height="300" width="300">
+                <p>Indulge in a flaky croissant filled with smoked ham, Swiss cheese, fresh cucumber, and mixed greens.</p>
+                <p>Price: $7.99</p>
+            </li>
+            <li>
+                <h3>Taco</h3>
+                <img src="images/taco.jpg" alt="Taco" height="300" width="300">
+                <p>A Mexican classic that's sure to bring a delightful fiesta to your taste buds! Shells can be either soft or crunchy.</p>
+                <p>Price: $6.49</p>
+            </li>
+            <li>
+                <h3>Shawarma</h3>
+                <img src="images/shawarma.jpg" alt="Shawarma" height="300" width="300">
+                <p>Tender beef or marinated chicken wrapped with tomatoes, cucumbers, and hummus in soft pita bread.</p>
+                <p>Price: $8.99</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+		<!-- Soups category -->
+		<section class="menu-category">
+			<h2>Soups</h2>
+			<div class="menu-items">
+				<ul class="contentleft">
+					<li>
+						<h3>Tomato Basil Soup</h3>
+						<img src="images/tsoup.jpg" alt="Tomato Basil Soup" height="300" width="300">
+						<p>A comforting and flavorful soup made with ripe tomatoes and fresh basil.</p>
+						<p>Price: $4.99</p>
+					</li>
+					<li>
+						<h3>Garlic Soup</h3>
+						<img src="images/garlic.jpg" alt="Garlic Soup" height="300" width="300">
+						<p>Discover the culinary magic of garlic. This creamy soup has been delicately blended with savory broth, croutons, and a hint of aromatic herbs.</p>
+						<p>Price: $4.99</p>
+					</li>
+				</ul>
+
+				<ul class="contentright">
+					<li>
+						<h3>Mushroom Soup</h3>
+						<img src="images/mush.jpg" alt="Mushroom Soup" height="300" width="300">
+						<p>A delightful and earthy soup made with fresh mushrooms, simmered to perfection.</p>
+						<p>Price: $5.49</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+        
+        <!-- Breakfast category -->
+<section class="menu-category">
+    <h2>Breakfast</h2>
+    <div class="menu-items">
+        <ul class="contentleft">
+            <li>
+                <h3>Pancakes</h3>
+                <img src="images/pancakes.jpg" alt="Pancakes" height="300" width="300">
+                <p>Fluffy stacks of golden pancakes topped with seasonal fruits, sweet soothing syrup and a sprinkle of joy!</p>
+                <p>Price: $4.99</p>
+            </li>
+            <li>
+                <h3>Waffles</h3>
+                <img src="images/waffles.jpg" alt="Waffles" height="300" width="300">
+                <p>A childhood favorite. Crispy on the outside while tender on the inside!.</p>
+                <p>Price: $5.49</p>
+            </li>
+            <li>
+                <h3>Omelette</h3>
+                <img src="images/omelette.jpg" alt="Omelette" height="300" width="300">
+                <p>Our special omelette with a choice of fillings, a breakfast delight.</p>
+                <p>Price: $6.99</p>
+            </li>
+        </ul>
+
+        <ul class="contentright">
+            <li>
+                <h3>French Toast</h3>
+                <img src="images/french_toast.jpg" alt="French Toast" height="300" width="300">
+                <p>Slices of bread dipped in a sweet custard, grilled to perfection, and served with a dusting of powdered sugar and syrup.</p>
+                <p>Price: $5.79</p>
+            </li>
+            <li>
+                <h3>Avocado Toast</h3>
+                <img src="images/avocado.jpg" alt="Avocado Toast" height="300" width="300">
+                <p>A combination of creamy avocado spread on toasted bread, topped with various seasonings.</p>
+                <p>Price: $6.29</p>
+            </li>
+            <li>
+                <h3>Bacon, Egg & Cheese Sandwich</h3>
+                <img src="images/becs.jpg" alt="Bacon, Egg & Cheese Sandwich" height="300" width="300">
+                <p>Classic breakfast sandwich with bacon, fried egg, and melted cheese.</p>
+                <p>Price: $5.99</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+        
         <!-- Desserts category -->
-		<section class="menu-category">
-        <h2>Desserts</h2>
-        <div class="menu-items">
-            <ul class="contentleft">
-                <li>
-                    <h3>Strawberry Shortcake Swirl</h3>
-                    <img src="images/strawberry_cake.jpg" alt="Strawberry Shortcake" height="300" width="300">
-                    <p>Each slice of this heavenly creation is as light and soft as a cloud. Generously filled with a velvety layer of whipped cream and succulent slices of fresh strawberries, resulting in a roll of pure irresistible sweetness.</p>
-                    <p>Price: $4.99</p>
-                </li>
-                <li>
-                    <h3>Classic Cheesecake</h3>
-                    <img src="images/cheesecake.jpg" alt="Cheesecake" height="300" width="300">
-                    <p>A creamy cheesecake that can be topped with flavor of your choosing. A timeless, delicate dessert that's sure to please!</p>
-                    <p>Price: $5.99</p>
-                </li>
-                <li>
-                    <h3>Creamy Caramel Custard</h3>
-                    <img src="images/custard.jpg" alt="Caramel Custard" height="300" width="300">
-                    <p>A luscious custard dessert with a velvety texture, topped with a drizzle of caramel. A delightful ending to your dining experience.</p>
-                    <p>Price: $6.50</p>
-                </li>
-            </ul>
+<section class="menu-category">
+    <h2>Desserts</h2>
+    <div class="menu-items">
+        <ul class="contentleft">
+            <li>
+                <h3>Strawberry Shortcake Swirl</h3>
+                <img src="images/shortcake.jpg" alt="Strawberry Shortcake Swirl" height="300" width="300">
+                <p>Delicate layers of sponge cake with fresh strawberries and whipped cream.</p>
+                <p>$8.99</p>
+            </li>
+            <li>
+                <h3>Classic Cheesecake</h3>
+                <img src="images/cheesecake.jpg" alt="Classic Cheesecake" height="300" width="300">
+                <p>A classic New York-style cheesecake that can be topped with flavor of your choosing.</p>
+                <p>$7.99</p>
+            </li>
+            <li>
+                <h3>Creamy Caramel Custard</h3>
+                <img src="images/custard.jpg" alt="Creamy Caramel Custard" height="300" width="300">
+                <p>A luscious custard dessert with a velvety texture, topped with a drizzle of caramel.</p>
+                <p>$6.99</p>
+            </li>
+        </ul>
 
-            <ul class="contentright">
-                <li>
-                    <h3>Baklava Bonanza</h3>
-                    <img src="images/baklava.jpg" alt="Baklava" height="300" width="300">
-                    <p>A bountiful selection of honey-soaked phyllo pastry and chopped nuts, creating either a glorious Greek goodness or a terrific Turkish treat! </p>
-                    <p>Price: $5.50</p>
-                </li>
-                <li>
-                    <h3>Bursting Blueberry Pie</h3>
-                    <img src="images/blueberry_pie.jpg" alt="Blueberry Pie" height="300" width="300">
-                    <p>Dive into a burst of sweet blueberries, nestled in a golden crust. A comforting and fruity dessert choice.</p>
-                    <p>Price: $5.99</p>
-                </li>
-                <li>
-                    <h3>Ice Cream Sundae Surprise</h3>
-                    <img src="images/sundae.jpg" alt="Ice Cream Sundae" height="300" width="300">
-                    <p>Create your own sundae adventure with a choice of ice cream flavors and a delightful selection of toppings, where every scoop tells a story of flavor and joy!.</p>
-                    <p>Price: $4.99</p>
-                </li>
-            </ul>
-        </section>
-    </main>
+        <ul class="contentright">
+            <li>
+                <h3>Baklava Bonanza</h3>
+                <img src="images/baklava.jpg" alt="Baklava" height="300" width="300">
+                <p>A bountiful selection of honey-soaked phyllo pastry and chopped nuts, creating either a glorious Greek goodness or a terrific Turkish treat!</p>
+                <p>$9.99</p>
+            </li>
+            <li>
+                <h3>Bursting Blueberry Pie</h3>
+                <img src="images/blueberry.jpg" alt="Bursting Blueberry Pie" height="300" width="300">
+                <p>Dive into a burst of sweet blueberries, nestled in a golden crust.</p>
+                <p>$6.49</p>
+            </li>
+            <li>
+                <h3>Ice Cream Sundae Suprise</h3>
+                <img src="images/sundae.jpg" alt="Ice Cream Sundae Suprise" height="300" width="300">
+                <p>Create your own sundae adventure with a choice of ice cream flavors and a selection of toppings, where every scoop tells a story of flavor and joy!</p>
+                <p>$7.49</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+        
+        <!-- Pastries category -->
+<section class="menu-category">
+    <h2>Pastries</h2>
+    <div class="menu-items">
+        <ul class="contentleft">
+            <li>
+                <h3>Croissants</h3>
+                <img src="images/croissant.jpg" alt="Croissant" height="300" width="300">
+                <p>A buttery and flaky pastry, perfect for breakfast or as a delightful snack.</p>
+                <p>Price: $2.99</p>
+            </li>
+            <li>
+                <h3>Macarons</h3>
+                <img src="images/macarons.jpg" alt="Macarons" height="300" width="300">
+                <p>Colorful and flavorful French macarons in a variety of tastes.</p>
+                <p>Price: $1.00 per piece</p>
+            </li>
+            <li>
+                <h3>Muffins</h3>
+                <img src="images/muffins.jpg" alt="Muffin" height="300" width="300">
+                <p>Freshly baked muffins with a choice of flavors.</p>
+                <p>Price: $1.99</p>
+            </li>
+        </ul>
+
+        <ul class="contentright">
+            <li>
+                <h3>Eclairs</h3>
+                <img src="images/eclairs.jpg" alt="Eclairs" height="300" width="300">
+                <p>A delightful pastry filled with rich custard and topped with chocolate icing.</p>
+                <p>Price: $3.49</p>
+            </li>
+            <li>
+                <h3>Cinnamon Roll</h3>
+                <img src="images/cinnamon.jpg" alt="Cinnamon Roll" height="300" width="300">
+                <p>A sweet and gooey pastry rolled with cinnamon sugar and topped with thick frosting.</p>
+                <p>Price: $2.99</p>
+            </li>
+            <li>
+                <h3>Cannoli</h3>
+                <img src="images/cannoli.jpg" alt="Cannoli" height="300" width="300">
+                <p>A classic Italian pastry filled with sweet ricotta cheese and sometimes chocolate chip.</p>
+                <p>Price: $2.49</p>
+            </li>
+        </ul>
+    </div>
+</section>
+		
+		<!-- Snacks category -->
+<section class="menu-category">
+    <h2>Snacks</h2>
+    <div class="menu-items">
+        <ul class="contentleft">
+            <li>
+                <h3>Potato Chips</h3>
+                <img src="images/chips.jpg" alt="Potato Chips" height="300" width="300">
+                <p>Classic crispy potato chips, thinly sliced and lightly salted. The perfect on-the-go snack.</p>
+                <p>$1.99</p>
+            </li>
+            <li>
+                <h3>Pretzels</h3>
+                <img src="images/pretzels.jpg" alt="Pretzels" height="300" width="300">
+                <p>A crunchy and salty snack, great for any time of the day.</p>
+                <p>$1.49</p>
+            </li>
+            <li>
+                <h3>Fresh Fruit Cup</h3>
+                <img src="images/fruit_cup.jpg" alt="Fresh Fruit Cup" height="300" width="300">
+                <p>A refreshing cup of fresh and seasonal fruits.</p>
+                <p>$2.49</p>
+            </li>
+        </ul>
+
+        <ul class="contentright">
+            <li>
+                <h3>Mixed Nuts</h3>
+                <img src="images/mixed_nuts.jpg" alt="Mixed Nuts" height="300" width="300">
+                <p>A healthy and satisfying mix of assorted nuts.</p>
+                <p>$3.99</p>
+            </li>
+            <li>
+                <h3>Granola Bars</h3>
+                <img src="images/granola.jpg" alt="Granola Bars" height="300" width="300">
+                <p>A combination of oats, nuts, and dried fruits, packed with nutrients for a quick, on-the-go treat.</p>
+                <p>$1.79</p>
+            </li>
+            <li>
+                <h3>Cookies</h3>
+                <img src="images/cookies.jpg" alt="Cookies" height="300" width="300">
+                <p>Indulge in freshly baked cookies with gooey chocolate chips. Goes great with a cup of coffee or tea!</p>
+                <p>$1.99</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+        
+       <!-- Sides category -->
+<section class="menu-category">
+    <h2>Sides</h2>
+    <div class="menu-items">
+        <ul class="contentleft">
+            <li>
+                <h3>Side Salad</h3>
+                <img src="images/salad.jpg" alt="Side Salad" height="300" width="300">
+                <p>A light and healthy side salad to complement your meal.</p>
+                <p>Price: $3.99</p>
+            </li>
+            <li>
+                <h3>French Fries</h3>
+                <img src="images/fries.jpg" alt="French Fries" height="300" width="300">
+                <p>Golden and crispy French fries, a classic side option.</p>
+                <p>Price: $2.49</p>
+            </li>
+            <li>
+                <h3>Breadsticks</h3>
+                <img src="images/breadsticks.jpg" alt="Breadsticks" height="300" width="300">
+                <p>Freshly baked breadstick appetizers brushed with garlic-infused butter.</p>
+                <p>Price: $1.99</p>
+            </li>
+        </ul>
+
+        <ul class="contentright">
+            <li>
+                <h3>Donut</h3>
+                <img src="images/donut.jpg" alt="Donut" height="300" width="300">
+                <p>An irresistible glazed donut with a soft texture, perfect for satisfying your sweet tooth and goes great with coffee.</p>
+                <p>Price: $1.79</p>
+            </li>
+            <li>
+                <h3>Yogurt Parfait</h3>
+                <img src="images/parfait.jpg" alt="Yogurt Parfait" height="300" width="300">
+                <p>A healthy and delicious yogurt parfait with a mix of berries and granola.</p>
+                <p>Price: $3.29</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+        
+        <!-- Additional Information -->
+    <section class="menu-category" style="margin-bottom: 40px;">
+        <h2>Addidtional Info</h2>
+        <div class="menu-items">
+        <ul>
+			<p>Beverages can be served hot or iced.</p>
+            <p>Gluten-free and vegan options are available.</p>
+        </ul>
+    </section>
+	</main>
 
     <footer>
-        <h1>
-            Credit: Images provided by
-            <a href="https://www.pexels.com/photo/close-up-shot-of-a-glass-of-drink-9946170/">Екатерина Шумских</a>,
-            <a href="https://www.pexels.com/photo/lemon-juice-on-selective-focus-photography-2109099/">DESIGNbyJA</a>,
-			<a href="https://www.pexels.com/photo/clear-glass-bowl-beside-yellow-flower-1638280/">Mareefe</a>,
-			<a href="https://www.pexels.com/photo/white-ceramic-mug-with-coffee-4264049/">Andrew Neel</a>,
-			<a href="https://pixabay.com/photos/drink-soda-glasses-can-beverage-462776/">stevepb</a>,
-			<a href="https://unsplash.com/photos/7TeR1A1MUpM">Jonathan Borba</a>,
-			<a href="https://www.pexels.com/photo/pancake-with-sliced-strawberry-376464/">Ash</a>,
-			<a href="https://www.pexels.com/photo/close-up-shot-of-a-waffle-with-butter-and-syrup-8160967/">Kaitlyn Epperson</a>,
-			<a href="https://www.pexels.com/photo/bread-food-plate-toast-4141026/">Arvin Nav</a>,
-			<a href="https://unsplash.com/photos/kp8vmhqytuM">Mikey Frost</a>,
-			<a href="https://unsplash.com/photos/Hfu6RNhOSLg">Klara Avsenik</a>,
-			<a href="https://pixabay.com/photos/cinnamon-roll-bread-food-pastry-7597308/">catceeq</a>,
-			<a href="https://pixabay.com/photos/blt-sandwich-snack-breakfast-7009969/">Heribertophotographer</a>,
-			<a href="https://www.pexels.com/photo/salad-on-a-plate-2097090/">julie aagaard</a>,
-			<a href="https://www.freepik.com/free-photo/grilled-cheese-sandwich_7498134.htm">Racool_studio</a>,
-			<a href="https://www.freepik.com/free-photo/cheeseburger-with-french-fries-ketchup-wooden-table-ai-generative_42742071.htm">chandlervid85</a>,
-			<a href="https://www.freepik.com/free-photo/mexican-tacos-with-beef-tomato-sauce-salsa_7122092.htm">timolina</a>,
-			<a href="https://pixabay.com/photos/abstract-american-background-1238656/">Shutterbug75</a>,
-			<a href="https://www.freepik.com/free-photo/cooked-salmon-steaks_8761475.htm">Racool_studio</a>,
-			<a href="https://www.freepik.com/free-photo/side-view-baked-chicken-breast-with-spring-onion-sauce-sesame-seeds-rice-plate_8195885.htm">stockking</a>,
-			<a href="https://www.freepik.com/free-photo/spaghetti-with-bolognese-sauce-wooden-tablexa_38744102.htm">chandlervid85</a>,
-			<a href="https://www.freepik.com/free-photo/plate-italian-seafood-shrimp-noodles_31408382.htm">dashu83</a>,
-			<a href="https://www.freepik.com/free-photo/garlic-soup-topped-with-croutons-bowl-wooden-table_24188493.htm">chandlervid85</a>,
-			<a href="https://www.freepik.com/free-photo/american-shrimp-fried-rice-served-with-chili-fish-sauce-thai-food_10401223.htm">jcomp</a>,
-			<a href="https://www.freepik.com/free-photo/strawberry-cream-cake_28007023.htm">fahrwasser</a>,
-			<a href="https://www.freepik.com/free-photo/vertical-closeup-shot-strawberry-cheesecake-white-plate_12328027.htm">wirestock</a>,
-			<a href="https://www.freepik.com/free-photo/caramel-custard-pudding_3567180.htm">lifeforstock</a>,
-			<a href="https://www.freepik.com/free-photo/turkish-style-dessert-havudj-dilimi-walnuts-pistachios-syrop-dough-side-view_9408782.htm">stockking</a>,
-			<a href="https://www.freepik.com/free-photo/top-view-pie-with-blueberries_7947763.htm">freepik</a> and
-			<a href="https://www.freepik.com/free-photo/side-view-white-ice-cream-scoops-decorated-with-chocolate-cookies-syrup-vase-wooden-table_7998264.htm">KamranAydinov</a>
+        <div>
+            
+        </div>
+		<h1>
+            Credit: All images used are royalty-free from www.freepik.com & pexels.com. Here are a few:
+			<a href="https://www.pexels.com/photo/white-ceramic-mug-with-coffee-4264049/">Andrew Neel</a>, <!--coffee-->
+			<a href="https://www.pexels.com/photo/close-up-shot-of-a-glass-of-drink-9946170/">Екатерина Шумских</a>, <!--sparkling water-->
+			<a href="https://www.pexels.com/photo/lemon-juice-on-selective-focus-photography-2109099/">DESIGNbyJA</a>, <!--lemonade-->
+			<a href="https://pixabay.com/photos/drink-soda-glasses-can-beverage-462776/">stevepb</a>, <!--soda-->
+			<a href="https://pixabay.com/photos/blt-sandwich-snack-breakfast-7009969/">Heribertophotographer</a>, <!--blt-->
+			<a href="https://www.freepik.com/free-photo/grilled-cheese-sandwich_7498134.htm">Racool_studio</a>, <!--grilled cheese-->
+			<a href="hhttps://www.freepik.com/free-photo/grilled-sandwich-with-bacon-fried-egg-tomato-lettuce-served-wooden-cutting-board_13807887.htm#query=panini&position=10&from_view=search&track=sph">jcomp</a>, <!--panini-->
+			<a href="https://www.pexels.com/photo/ham-burger-with-vegetables-1639557/">Valeria Boltneva</a> <!--cheeseburger-->
 		</h1>
     </footer>
+
 </body>
 </html>
