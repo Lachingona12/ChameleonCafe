@@ -347,12 +347,32 @@ a:hover {
 }
 
 .bottomhome h2 {
+    margin-top: 5em;
     color: #E5FCF5;
     font-family: 'Montserrat', sans-serif;
 }
 
 .bottomhome li {
     clear: left;
+    font-size: 20px;
+}
+
+.video .contentleft {
+    float: left;
+    position: absolute;
+    margin-top: 20em;
+}
+
+.video a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.video .contentright {
+    float: right;
+    margin-top: 20em;
+    margin-right: 38%;
 }
 
 footer {
@@ -368,4 +388,109 @@ footer {
     align-items: center;
     font-family: sans-serif;
     font-size: 0.5em;
+}
+
+.learnMore {
+    background-color: #519872 !important;
+    color: #E5FCF5 !important;
+    padding: 1em;
+    font-weight: bolder;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.learnMore:hover {
+    transform: scale(1.1);
+    border: none;
+}
+
+.card {
+    background-color: #B3DEC1;
+    color: black;
+}
+
+.jumboCard {
+    padding: 100px;
+}
+
+.jumboCardTitle {
+    font-size: 76px;
+}
+
+.jumboCardText {
+    font-size: 20px;
+}
+
+.cardSubtitle{
+    font-style: italic;
+}
+
+.applyBtn {
+   /* background-color: #519872 !important;
+    color: #E5FCF5 !important;*/
+    color: #519872 !important;
+    background-color: #E5FCF5 !important;
+    font-weight: bolder;
+    width: 100%;
+    border: none;
+}
+
+.applyBtn:hover {
+    background-color: #519872 !important;
+    color: #E5FCF5 !important;
+}
+
+hr {
+    border: 1px solid snow;
+}
+.contact-section {
+    padding-bottom: 50px;
+    color: black;
+}
+.contact-form {
+    padding: 20px;
+    background-color: #B3DEC1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group label {
+    font-weight: bold;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Mobile adjustments */
+
+/* Tablets and smaller screens */
+@media only screen and (max-device-width: 1380px) {
+    .video .contentright {
+        margin-right: 15%;
+    }
+
+
+/* Phones */
+@media only screen and (max-device-width: 950px) {
+    .video .contentright {
+        margin-right: 7%;
+    }
+    }
 }
