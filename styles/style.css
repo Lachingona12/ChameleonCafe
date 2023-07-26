@@ -2,10 +2,193 @@
 body{
     background-color: #000009;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body{
+    background-color: #000009;
+}
 .navCustom {
     padding-bottom: 0.25em;
     border-radius: 2px;
     background-color: #B3DEC1;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000009;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: #E5FCF5;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+  }
+li a:hover{
+    background-color: #003825;
+    text-decoration: none;
+}
+
+a:link {
+    color: #519872;
+    text-decoration: none;
+  }
+  
+a:visited {
+    color: #519872;
+    text-decoration: none;
+  }
+  
+a:active {
+    color: #519872;
+    text-decoration: underline;
+  }
+
+a:hover {
+    color: #519872;
+    text-decoration: underline;
+  }
+
+.bottomhome li a:hover {
+    background-color: initial;
+}
+
+.nav h1 {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+.banner {
+    background-size: initial;
+    padding-top: 10em;
+    background-image: url(../images/BannerImage2.png);
+    z-index: 1;
+    padding-bottom: 8em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+.banner h1 {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    z-index: 2;
+    color: #E5FCF5;
+    font-family: 'Libre Baskerville', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+.banner h5 {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    color: #E5FCF5;
+    text-align: center;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 4em;
+    padding-bottom: 3em;
+}
+.banner .heroButton {
+    text-align: center;
+    background-color: #519872;
+    color: #E5FCF5;
+    font-family: sans-serif;
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 3.5em;
+}
+.banner .heroButtonContainer {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    grid-gap: 1em;
+}
+
+.contentright {
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(25%);
+}
+
+.contentleft {
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(-25%);
+}
+
+.animate {
+ opacity: 1;
+ transform: translateX(0);
+}
+
+.teaContainer {
+    z-index: 1;
+    float: left;
+    margin-left: 3em;
+}
+
+.middle {
+    margin-top: 4em;
+}
+
+.middle h2 {
+    color: #E5FCF5;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.middle p {
+    color: #E5FCF5;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bottomhome {
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+.bottomhome p {
+    color: #E5FCF5;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bottomhome h2 {
+    color: #E5FCF5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bottomhome li {
+    clear: left;
+}
+
+footer {
+    bottom: 0%;
+    width: 100%;
+    position: fixed;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+    background-color: #B3DEC1;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 0.5em;
 }
 ul {
     list-style-type: none;
