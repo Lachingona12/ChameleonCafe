@@ -492,5 +492,26 @@ hr {
     .video .contentright {
         margin-right: 7%;
     }
+    /* Jobs page */
+    .jumboCardTitle {
+        font-size: 40px;
+    }
+
+    .jumboCardText {
+        font-size: 16px;
+    }
+
+    .learnMore {
+        font-size: small;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text, .cardSubtitle {
+        font-size: .85rem;
+    }
+    
     }
 }
